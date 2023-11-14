@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="icon/css/all.min.css">
+   <script src="icon/js/all.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <style>
+      #nar{
+        color: whitesmoke;
+      }
+      #nar:hover{
+        color: red;
+      }
+      #one{
+        color: whitesmoke;
+      }
+      #one:hover{
+        color: rgb(255, 42, 0);
+      }
+      #att{
+        color: whitesmoke;
+      }
+      #att:hover{
+        color: red;
+      }
+      #on{
+        margin-top: 100px;
+      }
+      .timeline{
+        border-top: 1px solid rgb(185, 185, 185);
+        position: relative;
+        list-style: none;
+        display: flex;
+        overflow-x: scroll;
+      }
+      .timeline::-webkit-scrollbar{
+        width: 10px;
+      }
+      .timeline .time-item{
+        position: relative;
+        top: 10px;
+        
+        padding-right: 15px;
+        
+      }
+      .timeline .time-item:after{
+        position: absolute;
+        display: block;
+        top:-15px;
+      }
+      .timeline .time-item:after{
+        background-color:rgb(185,185,185);
+        border-radius: 50%;
+        height: 11px;
+        width: 11px;
+        content:"";
+      }
+      #de1{
+        overflow-y: scroll;
+      }
+      #de1::-webkit-scrollbar{
+        width: 10px;
+      }
+      
+
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <header>
+                
+                <nav class="navbar navbar-warning">
+                    <div class="container-fluid">
+                        <a href="#" class="navbar-brand bg-danger-subtle"><img src="animate.png" width="50px" height="50px" style="margin-left:30px; margin-top: 10px;"><h1 style="margin-left: 100px; margin-top:-50px; color: rgb(48, 48, 48);" >Anime Nation</h1></a>
+                        <ul class="navbar-nav d-inline-flex flex-row" >
+                            <li class="nav-item"><a href="#" class="nav-link ps-5" style="margin-left:-1000px ;"><i class="fa-solid fa-house"></i> HOME</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link ps-5" style="margin-left:-900px ;"><i class="fa-solid fa-user"></i> USER</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link ps-5" style="margin-left:-800px ;"><i class="fa-solid fa-film"></i> MOVIE</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link ps-5" style="margin-left:-700px ;"><i class="fa-solid fa-download"> </i> DOWNLOADs</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link ps-5" style="margin-left:-560px ;"><i class="fa-solid fa-sliders"></i> SETTINGs</a></li>
+
+                        </ul>
+                    </div>
+                </nav>
+               
+            </header>
+            <div class="col-lg-9">
+                <div class="row" style="background-color: rgb(213, 211, 211);">
+                    <div class="col-lg-4">
+                        <div class="card m-5 bg-secondary" style="width:325px; height: 380px;">
+                            <h5 style=" color: rgb(195, 6, 6) ;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; margin-left: 100px; margin-top: 25px;">JOURNEY WITH US</h5>
+                            <img src="anime.png" alt="menu" width="250px" height="250px" style="margin-left: 40px;">
+                            <button type="button" class="btn btn-success" style="width: fit-content; margin-left: 74px; margin-top: 20px;"> Select your series</button>
+                        </div>
+                        
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card m-5 bg-secondary" style="width: 625px; height: 380px;">
+                            <ul class="nav nav-taps justify-content-center" role="tablist">
+                                <li class="nav-item "><a href="#naruto" id="nar" class="nav-link" data-bs-toggle="tab">NARUTO</a></li>
+                                <li class="nav-item "><a href="#piece" id="one" class="nav-link" data-bs-toggle="tab">ONE PIECE</a></li>
+                                <li class="nav-item "><a href="#attack" id="att" class="nav-link" data-bs-toggle="tab">ATTACK ON TITANS</a></li>
+                                <li class="nav-item "><a href="#dead" id="att" class="nav-link" data-bs-toggle="tab">DEATH NOTE</a></li>
+                                <li class="nav-item "><a href="#tokyo" id="att" class="nav-link" data-bs-toggle="tab">TOKYO REVENGERS</a></li>
+                                
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane" id="naruto">
+                                    <div class="col-lg-4" style="padding-top:45px; padding-left: 15px;">
+                                        <div class="card p-2 bg-secondary" style=" width: 170px; height: 220px;">
+                                            <img src="naruto.png" width="150px" height="200px">
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-8" style="padding: 2px;">
+                                        <div class="card p-3 bg-secondary" style="margin-left: 200px; width: 400px; margin-top: -270px;">
+                                            <h4 style="margin-top: 0px; margin-left: 0px; padding-left:25px ;">Story plot :</h4>
+                                            <div class="progress" style="width:200px; margin-left: 165px; margin-top: -30px;">
+                                                <div class="progress-bar" style="width: 85%; background-color:orange;"></div>
+                                            </div>
+                                            <br>
+                                            <h4 style="margin-top: 0px; margin-left: 0px; padding-left:25px ;">Character :</h4>
+                                            <div class="progress" style="width:200px; margin-left: 165px; margin-top: -30px;">
+                                                <div class="progress-bar" style="width: 95%; background-color:orange;"></div>
+                                            </div>
+                                            <br>
+                                            <h4 style="margin-top: 0px; margin-left: 0px; padding-left:25px ;">Animation :</h4>
+                                            <div class="progress" style="width:200px; margin-left: 165px; margin-top: -30px;">
+                                                <div class="progress-bar" style="width: 80%; background-color:orange;"></div>
+                                            </div>
+                                            <br>
+                                            <h4 style="margin-top: 0px; margin-left: 0px; padding-left:25px ;">Audio :</h4>
+                                            <div class="progress" style="width:200px; margin-left: 165px; margin-top: -30px;">
+                                                <div class="progress-bar" style="width: 95%; background-color:orange;"></div>
+                                            </div>
+                                            <br>
+                                            <h4 style="margin-top: 0px; margin-left: 0px; padding-left:25px ;">Video :</h4>
+                                            <div class="progress" style="width:200px; margin-left: 165px; margin-top: -30px;">
+                                                <div class="progress-bar" style="width: 95%; background-color:orange;"></div>
+                                            </div>
+                                            <br>
+                                            <h4 style="margin-top: 0px; margin-left: 0px; padding-left:25px ;">Over All  :</h4>
+                                            <div class="progress" style="width:200px; margin-left: 165px; margin-top: -30px;">
+                                                <div class="progress-bar" style="width: 95%; background-color:orange;"></div>
+                                            </div>
+                                
+                                        </div>
+                                    </div>
+                                    
+
+                            
+                                </div>
+                                <div class="tab-pane" id="piece">
+                                    <div class="col-lg-4" style="padding-top:45px; padding-left: 15px;">
+                                        <div class="card p-2 bg-secondary" style=" width: 170px; height: 220px;">
+                                            <img src="One_Piece.png" width="150px" height="200px">
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-8" style="padding: 2px;">
+                                        <div class="card p-3 bg-secondary" style=" margin-left: 200px; width: 400px; margin-top: -270px;">
+                                            <h4 style="margin-top: 0px; margin-left: 0px; padding-left:25px ;">Story plot :</h4>
+                                            <div class="progress" style="width:200px; margin-left: 165px; margin-top: -30px;">
+                                                <div class="progress-bar" style="width: 85%; background-color:rgb(17, 0, 255);"></div>
+                                            </div>
+                                            <br>
+                                            <h4 style="margin-top: 0px; margin-left: 0px; padding-left:25px ;">Character :</h4>
+                                            <div class="progress" style="width:200px; margin-left: 165px; margin-top: -30px;">
+                                                <div class="progress-bar" style="width: 95%; background-color:rgb(17, 0, 255);"></div>
+                                            </div>
+                                            <br>
+                                            <h4 style="margin-top: 0px; margin-left: 0px; padding-left:25px ;">Animation :</h4>
+                                            <div class="progress" style="width:200px; margin-left: 165px; margin-top: -30px;">
+                                                <div class="progress-bar" style="width: 80%; background-color:rgb(17, 0, 255);"></div>
+                                            </div>
+                                            <br>
+                                            <h4 style="margin-top: 0px; margin-left: 0px; padding-left:25px ;">Audio :</h4>
+                                            <div class="progress" style="width:200px; margin-left: 165px; margin-top: -30px;">
+                                                <div class="progress-bar" style="width: 95%; background-color:rgb(17, 0, 255);"></div>
+                                            </div>
+                                            <br>
+                                            <h4 style="margin-top: 0px; margin-left: 0px; padding-left:25px ;">Video :</h4>
+                                            <div class="progress" style="width:200px; margin-left: 165px; margin-top: -30px;">
+                                                <div class="progress-bar" style="width: 95%; background-color:rgb(17, 0, 255);"></div>
+                                            </div>
+                                            <br>
+                                            <h4 style="margin-top: 0px; margin-left: 0px; padding-left:25px ;">Over All  :</h4>
+                                            <div class="progress" style="width:200px; margin-left: 165px; margin-top: -30px;">
+                                                <div class="progress-bar" style="width: 95%; background-color:rgb(17, 0, 255);"></div>
+                                            </div>
+                                
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="attack">
+                                    <div class="col-lg-4" style="padding-top:45px; padding-left: 15px;">
+                                        <div class="card p-2 bg-secondary" style="width: 170px; height: 220px;">
+                                            <img src="attack.png" width="150px" height="200px">
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-8" style="padding: 2px;">
+                                        <div class="card p-3 bg-secondary" style=" margin-left: 200px; width: 400px; margin-top: -270px;">
+                                            <h4 style="margin-top: 0px; margin-left: 0px; padding-left:25px ;">Story plot :</h4>
+                                            <div class="progress" style="width:200px; margin-left: 165px; margin-top: -30px;">
+                                                <div class="progress-bar" style="width: 85%; background-color: darkgray;"></div>
+                                            </div>
+                                            <br>
+                                            <h4 style="margin-top: 0px; margin-left: 0px; padding-left:25px ;">Character :</h4>
+                                            <div class="progress" style="width:200px; margin-left: 165px; margin-top: -30px;">
+                                                <div class="progress-bar" style="width: 95%; background-color: darkgray;"></div>
+                                            </div>
+                                            <br>
+                                            <h4 style="margin-top: 0px; margin-left: 0px; padding-left:25px ;">Animation :</h4>
+                                            <div class="progress" style="width:200px; margin-left: 165px; margin-top: -30px;">
+                                                <div class="progress-bar" style="width: 80%; background-color:darkgray;"></div>
+                                            </div>
+                                            <br>
+                                            <h4 style="margin-top: 0px; margin-left: 0px; padding-left:25px ;">Audio :</h4>
+                                            <div class="progress" style="width:200px; margin-left: 165px; margin-top: -30px;">
+                                                <div class="progress-bar" style="width: 95%; background-color:darkgray;"></div>
+                                            </div>
+                                            <br>
+                                            <h4 style="margin-top: 0px; margin-left: 0px; padding-left:25px ;">Video :</h4>
+                                            <div class="progress" style="width:200px; margin-left: 165px; margin-top: -30px;">
+                                                <div class="progress-bar" style="width: 95%; background-color:darkgray;"></div>
+                                            </div>
+                                            <br>
+                                            <h4 style="margin-top: 0px; margin-left: 0px; padding-left:25px ;">Over All  :</h4>
+                                            <div class="progress" style="width:200px; margin-left: 165px; margin-top: -30px;">
+                                                <div class="progress-bar" style="width: 95%; background-color:darkgray;"></div>
+                                            </div>
+                                
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="dead">
+                                    <div class="col-lg-4" style="padding-top:45px; padding-left: 15px;">
+                                        <div class="card p-2 bg-secondary" style=" width: 170px; height: 220px;">
+                                            <img src="dead.png" width="150px" height="200px">
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-8" style="padding: 2px;">
+                                        <div class="card p-3 bg-secondary" style=" margin-left: 200px; width: 400px; margin-top: -270px;">
+                                            <h4 style="margin-top: 0px; margin-left: 0px; padding-left:25px ;">Story plot :</h4>
+                                            <div class="progress" style="width:200px; margin-left: 165px; margin-top: -30px;">
+                                                <div class="progress-bar" style="width: 85%; background-color: rgb(8, 8, 8);"></div>
+                                            </div>
+                                            <br>
+                                            <h4 style="margin-top: 0px; margin-left: 0px; padding-left:25px ;">Character :</h4>
+                                            <div class="progress" style="width:200px; margin-left: 165px; margin-top: -30px;">
+                                                <div class="progress-bar" style="width: 95%; background-color: rgb(4, 4, 4);"></div>
+                                            </div>
+                                            <br>
+                                            <h4 style="margin-top: 0px; margin-left: 0px; padding-left:25px ;">Animation :</h4>
+                                            <div class="progress" style="width:200px; margin-left: 165px; margin-top: -30px;">
+                                                <div class="progress-bar" style="width: 80%; background-color:rgb(5, 5, 5);"></div>
+                                            </div>
+                                            <br>
+                                            <h4 style="margin-top: 0px; margin-left: 0px; padding-left:25px ;">Audio :</h4>
+                                            <div class="progress" style="width:200px; margin-left: 165px; margin-top: -30px;">
+                                                <div class="progress-bar" style="width: 95%; background-color:rgb(7, 7, 7);"></div>
+                                            </div>
+                                            <br>
+                                            <h4 style="margin-top: 0px; margin-left: 0px; padding-left:25px ;">Video :</h4>
+                                            <div class="progress" style="width:200px; margin-left: 165px; margin-top: -30px;">
+                                                <div class="progress-bar" style="width: 95%; background-color:rgb(5, 5, 5);"></div>
+                                            </div>
+                                            <br>
+                                            <h4 style="margin-top: 0px; margin-left: 0px; padding-left:25px ;">Over All  :</h4>
+                                            <div class="progress" style="width:200px; margin-left: 165px; margin-top: -30px;">
+                                                <div class="progress-bar" style="width: 95%; background-color:rgb(1, 1, 1);"></div>
+                                            </div>
+                                
+                                        </div>
+                                </div>
+                                
+                            </div>
+                            <div class="tab-pane" id="tokyo">
+                                <div class="col-lg-4" style="padding-top:45px; padding-left: 15px;">
+                                    <div class="card p-2 bg-secondary" style=" width: 170px; height: 220px;">
+                                        <img src="tokyo.png" width="150px" height="200px">
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-8" style="padding: 2px;">
+                                    <div class="card p-3 bg-secondary" style=" margin-left: 200px; width: 400px; margin-top: -270px;">
+                                        <h4 style="margin-top: 0px; margin-left: 0px; padding-left:25px ;">Story plot :</h4>
+                                        <div class="progress" style="width:200px; margin-left: 165px; margin-top: -30px;">
+                                            <div class="progress-bar" style="width: 85%; background-color: rgb(242, 181, 181);"></div>
+                                        </div>
+                                        <br>
+                                        <h4 style="margin-top: 0px; margin-left: 0px; padding-left:25px ;">Character :</h4>
+                                        <div class="progress" style="width:200px; margin-left: 165px; margin-top: -30px;">
+                                            <div class="progress-bar" style="width: 95%; background-color: rgb(242, 181, 181);"></div>
+                                        </div>
+                                        <br>
+                                        <h4 style="margin-top: 0px; margin-left: 0px; padding-left:25px ;">Animation :</h4>
+                                        <div class="progress" style="width:200px; margin-left: 165px; margin-top: -30px;">
+                                            <div class="progress-bar" style="width: 80%; background-color:rgb(242,181,181);"></div>
+                                        </div>
+                                        <br>
+                                        <h4 style="margin-top: 0px; margin-left: 0px; padding-left:25px ;">Audio :</h4>
+                                        <div class="progress" style="width:200px; margin-left: 165px; margin-top: -30px;">
+                                            <div class="progress-bar" style="width: 95%; background-color:rgb(242,181,181);"></div>
+                                        </div>
+                                        <br>
+                                        <h4 style="margin-top: 0px; margin-left: 0px; padding-left:25px ;">Video :</h4>
+                                        <div class="progress" style="width:200px; margin-left: 165px; margin-top: -30px;">
+                                            <div class="progress-bar" style="width: 95%; background-color:rgb(242,181,181);"></div>
+                                        </div>
+                                        <br>
+                                        <h4 style="margin-top: 0px; margin-left: 0px; padding-left:25px ;">Over All  :</h4>
+                                        <div class="progress" style="width:200px; margin-left: 165px; margin-top: -30px;">
+                                            <div class="progress-bar" style="width: 95%; background-color:rgb(242,181,181);"></div>
+                                        </div>
+                            
+                                    </div>
+                            </div>
+                            
+                        </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="row" style="background-color: rgb(213, 211, 211);">
+                        <div class="col-lg-4">
+                            <div class="card mt-2 bg-secondary" style="width:325px; height: 380px;">
+                                <div class="carousel slide" id="move" data-bs-ride="carousel">
+                                    <div class="carousel-inner" >
+                                        <div class="carousel-item active" style="margin-left: 35px; margin-top: 20px;" >
+                                            <img src="One_Piece.png" width="250PX" height="250PX" d-block>
+                                            <p style="color: rgb(249, 248, 248); margin-right: 67px;">"No matter how hard or impossible it is, never lose sight of your goal..." - Monkey D Luffy</p>
+                                        
+                                        </div>
+                                        <div class="carousel-item" style="margin-left: 35px; margin-top: 20px;">
+                                            <img src="naruto.png" width="250PX" height="250PX" d-block>
+                                            <p style="color: rgb(249, 248, 248); margin-right: 67px;">" feel pain, Accept pain, know pain who don't know real pain they don't understand the ture peace..."<br>-The Pain</p>
+                                            
+                                        </div>
+                                        <div class="carousel-item" style="margin-left: 35px; margin-top: 20px;">
+                                            <img src="dead.png" width="250PX" height="250PX" d-block>
+                                            <p style="color: rgb(249, 248, 248); margin-right: 67px;">" i've never once considered finding that notebook and gaining this power a misfortune"</p>
+                                        </div>
+                                        <div class="carousel-item" style="margin-left: 35px; margin-top: 20px;">
+                                            <img src="attack.png" width="250PX" height="250PX" d-block>
+                                            <p style="color: rgb(249, 248, 248); margin-right: 67px;">" Two sides of th orld. mikasa:" This world s cruel, and it'd also very bautiful"..."</p>
+                                        </div>
+                                        <div class="carousel-item" style="margin-left: 35px; margin-top: 20px;">
+                                            <img src="tokyo.png" width="250PX" height="250PX" d-block>
+                                       <p style="color: rgb(249, 248, 248); margin-right: 67px;">" No matter what kind of hell awaits us...i'll always be with you till the end "</p>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="carousel-control-prev" data-bs-target="#move" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button type="button" class="carousel-control-next" data-bs-target="#move" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                </div>
+                                
+
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card m-2 bg-secondary" style="width:400px; height: 380px; margin-left: -100px;">
+                                <div class="card-body">
+                                    <h5>Series Watching Order</h5>
+                                   <div class="card" style="height: 150px;">
+                                        <ul class="nav nav-pills justify-content-center" role="tablist">
+                                            <li class="nav-item"><a href="#nartime" class="nav-link" data-bs-toggle="pill">NARUTO</a></li>
+                                            <li class="nav-item"><a href="#onetime" class="nav-link" data-bs-toggle="pill">One Piece</a></li>
+                                        
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div class="tab-pane" id="nartime">
+                                                <ul class="timeline">
+                                                    <li class="time-item"><p>Episodes 1-101</p></li>
+                                                    <li class="time-item"><p>Movie: Ninja clash</p></li>
+                                                    <li class="time-item"><p>Episodes 102-160</p></li>
+                                                    <li class="time-item"><p>Movie: the legend stone</p></li>
+                                                    <li class="time-item"><p>Episodes 161-196 </p></li>
+                                                    <li class="time-item"><p>Movie: Crescent Moon Kingdom </p></li>
+                                                    <li class="time-item"><p>Episodes 197-220 </p></li>
+                                                
+                                                </ul>
+    
+                                            </div>
+                                            <div class="tab-pane" id="onetime">
+                                                <ul class="timeline">
+                                                    <li class="time-item"><p>Episodes 1-18</p></li>
+                                                    <li class="time-item"><p>Movie: The clock island</p></li>
+                                                    <li class="time-item"><p>Episodes 18-53</p></li>
+                                                    <li class="time-item"><p>Movie: Choppers Kingdom</p></li>
+                                                    <li class="time-item"><p>Episodes 54-102 </p></li>
+                                                    <li class="time-item"><p>Movie: deadend adventure </p></li>
+                                                    <li class="time-item"><p>Episodes 103-138</p></li>
+                                                    <li class="time-item"><p>Movie: The cursed holy sword</p></li>
+                                                    <li class="time-item"><p>Episodes 139-143</p></li>
+                                                
+                                                </ul>
+    
+                                            </div>
+                                            
+                                        </div>
+                                   </div>
+                                    
+                                </div>
+                                <div class="card-body">
+                                    <div class="card" style="height: 150px;">
+                                         <ul class="nav nav-pills justify-content-center" role="tablist">
+                                             <li class="nav-item"><a href="#atttime" class="nav-link" data-bs-toggle="pill">ATTACK ON TITANS</a></li>
+                                             <li class="nav-item"><a href="#toktime" class="nav-link" data-bs-toggle="pill">TOKYO REVENGERS</a></li>
+                                         
+                                         </ul>
+                                        <div class="tab-content">
+                                            <div class="tab-pane" id="atttime">
+                                                <ul class="timeline">
+                                                     <li class="time-item"><p>Episodes 1-25</p></li>
+                                                     <li class="time-item"><p>Episodes 26-37</p></li>
+                                                     <li class="time-item"><p>Episodes 38-49</p></li>
+                                                     <li class="time-item"><p>Episodes 50-59</p></li>
+                                                     <li class="time-item"><p>Episodes 60-75 </p></li>
+                                                     <li class="time-item"><p>Episodes 76-87 </p></li>
+                                                     <li class="time-item"><p>Episodes 88 </p></li>
+                                                     <li class="time-item"><p>Episodes 89 </p></li>
+                                                 
+                                                </ul>
+     
+                                            </div>
+                                             <div class="tab-pane" id="toktime">
+                                                 <ul class="timeline">
+                                                     <li class="time-item"><p>Season 1</p></li>
+                                                     <li class="time-item"><p>Season 2</p></li>
+                                                     <li class="time-item"><p>Season 3</p></li>
+                                                                                                      
+                                                 </ul>
+     
+                                             </div>
+                                             
+                                        </div>
+                                    </div>
+                                     
+                                 </div>
+                            
+                                    
+                            </div>
+                       </div>
+                       <div class="col-lg-3">
+                        <div class="card ms-5 mt-2 bg-secondary" id="de1" style="width:300px; height: 380px;">
+                            <div class="row">
+                                <h3 style="margin: 15px; margin-left: 25px;">Suggestion For You</h3>
+                                <div class="card justify-content-center" style="width: 100px; height: 150px;margin-left: 40px;">
+                                    <a href="#"> <img src="dead.png" width="90px" height="125px" style="margin-left: -8px;"></a>    
+                                </div>
+                                <div class="card justify-content-center" style="width: 100px; height: 150px;margin-left: 40px;">
+                                    <a href="#"> <img src="dead.png" width="90px" height="125px" style="margin-left: -8px;"></a>    
+                                </div>
+                                <div class="card justify-content-center"  style="width: 100px; height: 150px;margin-left: 40px; margin-top: 15px;">
+                                    <a href="#"> <img src="dead.png" width="90px" height="125px" style="margin-left: -8px;"></a>    
+                                </div>
+                                <div class="card justify-content-center" style="width: 100px; height: 150px;margin-left: 40px; margin-top: 15px;">
+                                    <a href="#"> <img src="dead.png" width="90px" height="125px" style="margin-left: -8px;"></a>    
+                                </div>
+                                <button type="button" class="btn btn-success" data-bs-toggle="collapse" data-bs-target="#sug" style="width: fit-content; margin-left: 100px; margin-top: 10px;">Read More...</button>
+                                <div class="collapse" id="sug">
+                                    <div class="card justify-content-center" style="width: 100px; height: 150px;margin-left: 30px; margin-top: 20px;">
+                                        <a href="#"> <img src="dead.png" width="90px" height="125px" style="margin-left: 4px;"></a>    
+                                    </div>
+                                    <div class="card justify-content-center" style="width: 100px; height: 150px;margin-left: 150px; margin-top:-150px;">
+                                        <a href="#"> <img src="dead.png" width="90px" height="125px" style="margin-left: 4px;"></a>    
+                                    </div>
+                                    <div class="card justify-content-center" style="width: 100px; height: 150px;margin-left: 30px; margin-top: 25px;">
+                                        <a href="#"> <img src="dead.png" width="90px" height="125px" style="margin-left: 0px;"></a>    
+                                    </div>
+                                    <div class="card justify-content-center" style="width: 100px; height: 150px;margin-left: 150px; margin-top:-150px;">
+                                        <a href="#"> <img src="dead.png" width="90px" height="125px" style="margin-left: 4px;"></a>    
+                                    </div>
+                                    <div class="card justify-content-center" style="width: 100px; height: 150px;margin-left: 30px; margin-top: 25px;">
+                                        <a href="#"> <img src="dead.png" width="90px" height="125px" style="margin-left: 0px;"></a>    
+                                    </div>
+                                    <div class="card justify-content-center" style="width: 100px; height: 150px;margin-left: 150px; margin-top:-150px;">
+                                        <a href="#"> <img src="dead.png" width="90px" height="125px" style="margin-left: 4px;"></a>    
+                                    </div>
+                                    <div class="card justify-content-center" style="width: 100px; height: 150px;margin-left: 30px; margin-top: 25px;">
+                                        <a href="#"> <img src="dead.png" width="90px" height="125px" style="margin-left: 0px;"></a>    
+                                    </div>
+                                    <div class="card justify-content-center" style="width: 100px; height: 150px;margin-left: 150px; margin-top:-150px;">
+                                        <a href="#"> <img src="dead.png" width="90px" height="125px" style="margin-left: 4px;"></a>    
+                                    </div>
+                                    <div class="card justify-content-center" style="width: 100px; height: 150px;margin-left: 30px; margin-top: 25px;">
+                                        <a href="#"> <img src="dead.png" width="90px" height="125px" style="margin-left: 0px;"></a>    
+                                    </div>
+                                    <div class="card justify-content-center" style="width: 100px; height: 150px;margin-left: 150px; margin-top:-150px;">
+                                        <a href="#"> <img src="dead.png" width="90px" height="125px" style="margin-left: 4px;"></a>    
+                                    </div>
+                               
+                                </div>
+                           
+                           
+                            </div>
+                                
+                                
+                        </div>
+                   </div>
+    
+                    
+                </div>
+                
+            </div>
+            <div class="col-lg-3" style="background-color: rgb(213, 211, 211);">
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop" style="margin-left: 100px; margin-top: 40px;">
+                    Check For shopping
+                </button>  
+                <div class="offcanvas offcanvas-end offcanvas-success " data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="staticBackdropLabel">AMINE_WORLDs</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="shopping">
+                            <div class="card m-5 bg-secondary" style="width:300px; height: 380px; margin-top: -500px;">
+                                <h5 style=" color: rgb(195, 6, 6) ;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; margin-left: 100px; margin-top: 25px;">STATUES</h5>
+                                <img src="statue.png" alt="menu" width="250px" height="250px" style="margin-left: 25px;">
+                                <button type="button" class="btn btn-success" style="width: fit-content; margin-left: 80px; margin-top: 20px;"> For More</button>
+                            </div>
+                            <div class="card m-5 bg-secondary" style="width:300px; height: 380px; margin-top: -500px;">
+                                <h5 style=" color: rgb(195, 6, 6) ;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; margin-left: 100px; margin-top: 25px;">STICKER</h5>
+                                <img src="sticker.png" alt="menu" width="250px" height="250px" style="margin-left: 25px;">
+                                <button type="button" class="btn btn-success" style="width: fit-content; margin-left: 80px; margin-top: 20px;"> For More</button>
+                            </div>
+                            <div class="card m-5 bg-secondary" style="width:300px; height: 380px; margin-top: -500px;">
+                                <h5 style=" color: rgb(195, 6, 6) ;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; margin-left: 100px; margin-top: 25px;">STATUES</h5>
+                                <img src="t.shirt.png" alt="menu" width="250px" height="250px" style="margin-left: 25px;">
+                                <button type="button" class="btn btn-success" style="width: fit-content; margin-left: 80px; margin-top: 20px;"> For More</button>
+                            </div>
+                            <div class="card m-5 bg-secondary" style="width:300px; height: 380px; margin-top: -500px;">
+                                <h5 style=" color: rgb(195, 6, 6) ;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; margin-left: 100px; margin-top: 25px;">STATUES</h5>
+                                <img src="costume.png" alt="menu" width="250px" height="250px" style="margin-left: 25px;">
+                                <button type="button" class="btn btn-success" style="width: fit-content; margin-left: 80px; margin-top: 20px;"> For More</button>
+                            </div>
+                            <div class="card m-5 bg-secondary" style="width:300px; height: 380px; margin-top: -500px;">
+                                <h5 style=" color: rgb(195, 6, 6) ;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; margin-left: 100px; margin-top: 25px;">STATUES</h5>
+                                <img src="mask.png" alt="menu" width="250px" height="250px" style="margin-left: 25px;">
+                                <button type="button" class="btn btn-success" style="width: fit-content; margin-left: 80px; margin-top: 20px;"> For More</button>
+                            </div>
+                            <div class="card m-5 bg-secondary" style="width:300px; height: 380px; margin-top: -500px;">
+                                <h5 style=" color: rgb(195, 6, 6) ;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; margin-left: 100px; margin-top: 25px;">STATUES</h5>
+                                <img src="cap.png" alt="menu" width="250px" height="250px" style="margin-left: 25px;">
+                                <button type="button" class="btn btn-success" style="width: fit-content; margin-left: 80px; margin-top: 20px;"> For More</button>
+                            </div>
+                            <div class="card m-5 bg-secondary" style="width:300px; height: 380px; margin-top: -500px;">
+                                <h5 style=" color: rgb(195, 6, 6) ;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; margin-left: 100px; margin-top: 25px;">STATUES</h5>
+                                <img src="hoodie.png" alt="menu" width="250px" height="250px" style="margin-left: 25px;">
+                                <button type="button" class="btn btn-success" style="width: fit-content; margin-left: 80px; margin-top: 20px;"> For More</button>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <h5 style="margin-top: 25px;">TOP #3 ANIME MOSTLY VIEWED</h5>
+                <div class="card" style="width: 100%; height: fit-content; margin-top: 20px;">
+                    <ul class="nav nav-pills justify-content-center" role="tablist">
+                        <li class="nav-item"><a href="#today" class="nav-link" data-bs-toggle="pill">TODAY</a></li>
+                        <li class="nav-item"><a href="#week" class="nav-link" data-bs-toggle="pill">WEEKLY</a></li>
+                        <li class="nav-item"><a href="#month" class="nav-link" data-bs-toggle="pill">MONTHLY</a></li>
+                    </ul>
+                </div>
+                <div class="card" style="width: 100%; height: fit-content; margin-top: 25px;">
+                    <div class="tab-content">
+                        <div class="tab-pane" id="today">
+                            <img src="One_Piece.png" width="75px" height="75px" style="padding-left: 10px; padding-top: 10px;">
+                            <div class="progress align-items-end" style="width: 10px; height: 200px; margin-top: 10px; margin-left: 40px;">
+                            
+                                <div class="progress-bar bg-info" style=" width: 100%; height: 95%;"></div>
+                            </div>
+                            <img src="dead.png" width="75px" height="75px" style="padding-left: 10px; padding-top: 10px; margin-left: 130px; margin-top: -525px;">
+                            <div class="progress align-items-end" style="width: 10px; height: 200px; margin-top: -225px; margin-left: 170px; margin-bottom: 10px;">
+                            
+                                <div class="progress-bar bg-secondary" style=" width: 100%; height: 80%;"></div>
+                            </div>
+                            <img src="naruto.png" width="75px" height="75px" style="padding-left: 10px; padding-top: 10px; margin-left: 250px; margin-top: -545px;">
+                            <div class="progress align-items-end" style="width: 10px; height: 200px; margin-top: -235px; margin-left: 290px; margin-bottom: 10px;">
+                            
+                                <div class="progress-bar bg-warning" style=" width: 100%; height: 78%;"></div>
+                            </div>
+                        </div>      
+                    </div>
+                </div>
+                <div class="card" style="width: 100%; height: fit-content; margin-top: 25px;">
+                    <div class="tab-content">
+                        <div class="tab-pane" id="week">
+                            <img src="naruto.png" width="75px" height="75px" style="padding-left: 10px; padding-top: 10px;">
+                            <div class="progress align-items-end" style="width: 10px; height: 200px; margin-top: 10px; margin-left: 40px;">
+                            
+                                <div class="progress-bar bg-info" style=" width: 100%; height: 98%;"></div>
+                            </div>
+                            <img src="One_Piece.png" width="75px" height="75px" style="padding-left: 10px; padding-top: 10px; margin-left: 130px; margin-top: -525px;">
+                            <div class="progress align-items-end" style="width: 10px; height: 200px; margin-top: -225px; margin-left: 170px; margin-bottom: 10px;">
+                            
+                                <div class="progress-bar bg-secondary" style=" width: 100%; height: 80%;"></div>
+                            </div>
+                            <img src="tokyo.png" width="75px" height="75px" style="padding-left: 10px; padding-top: 10px; margin-left: 250px; margin-top: -545px;">
+                            <div class="progress align-items-end" style="width: 10px; height: 200px; margin-top: -235px; margin-left: 290px; margin-bottom: 10px;">
+                            
+                                <div class="progress-bar bg-warning" style=" width: 100%; height: 68%;"></div>
+                            </div>
+                        </div>     
+                    </div>
+                </div>
+                <div class="card" style="width: 100%; height: fit-content; margin-top: 25px;">
+                    <div class="tab-content">
+                        <div class="tab-pane" id="month">
+                            <img src="naruto.png" width="75px" height="75px" style="padding-left: 10px; padding-top: 10px;">
+                            <div class="progress align-items-end" style="width: 10px; height: 200px; margin-top: 10px; margin-left: 40px;">
+                            
+                                <div class="progress-bar bg-info" style=" width: 100%; height: 95%;"></div>
+                            </div>
+                            <img src="attack.png" width="75px" height="75px" style="padding-left: 10px; padding-top: 10px; margin-left: 130px; margin-top: -525px;">
+                            <div class="progress align-items-end" style="width: 10px; height: 200px; margin-top: -225px; margin-left: 170px; margin-bottom: 10px;">
+                            
+                                <div class="progress-bar bg-secondary" style=" width: 100%; height: 80%;"></div>
+                            </div>
+                            <img src="One_Piece.png" width="75px" height="75px" style="padding-left: 10px; padding-top: 10px; margin-left: 250px; margin-top: -545px;">
+                            <div class="progress align-items-end" style="width: 10px; height: 200px; margin-top: -235px; margin-left: 290px; margin-bottom: 10px;">
+                            
+                                <div class="progress-bar bg-warning" style=" width: 100%; height: 78%;"></div>
+                            </div>
+                        </div>     
+                    </div>
+                </div>
+                <div class="alert alert-danger alert-dismissible">
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                    <div class="card" >
+                        <img src="Crunchyroll.png" width="250px" height="150px">
+                        <button type="button" class="btn btn-danger" style="width: fit-content; margin-left: 50px; margin-top: 0px;">Enjoy Your Movies</button>
+                    </div>
+                </div>
+                <h3 style="margin-top: 100px;">Social Media</h3>
+                <a href="#">
+                    <img src="social-media-removebg-preview.png" width="350px" style="margin-top:-100px ;" >
+                </a>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
